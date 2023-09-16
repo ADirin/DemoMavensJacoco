@@ -7,24 +7,22 @@ public class CalCulateTest {
 
 	@Test
 	public void laskSummaTest() {
-		int sum =0;
-		sum = CalCulate.laskeSumma(4, 2);
-		assertEquals(6, sum);
+		
+		assertEquals(6, CalCulate.laskeSumma(4, 2));
+		assertEquals(-1, CalCulate.laskeSumma(-2, 1));
 	}
 	
 	@Test
 public  void laskMinnusTest() {
-	int subt =0;
-	subt = CalCulate.laskeMinnus(4, 2);
-	assertEquals(2, subt);
+		assertEquals(1, CalCulate.laskeMinnus(3, 2));
+        assertEquals(-3, CalCulate.laskeMinnus(0, 3));
 	}
 	
 	
 	@Test
 public  void laskKertausTest() {
-	int mult =0;
-	mult = CalCulate.laskeKerta(4, 2);
-	assertEquals(8, mult);		
+		assertEquals(6, CalCulate.laskeKerta(2, 3));
+        assertEquals(0, CalCulate.laskeKerta(0, 5));
 }
 	
 }
